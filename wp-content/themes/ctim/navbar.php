@@ -1,8 +1,5 @@
 <?php 
 global $wpdb;
-$main_url = $wpdb->get_results('SELECT option_value FROM wp_options WHERE option_name="siteurl"') ;
-
-$field = get_fields();
 ?>
 <header class="ulpgcds-header">
     <?php
@@ -17,10 +14,6 @@ $field = get_fields();
         </div>
         
         <div class="ulpgcds-header__top__links top-menu">
-            <div class="top-menu__flags">
-                    <a href="<?php echo ( network_home_url() . 'en/' . (is_bool($field) ? '' : $field['slug_page_en']) ); ?>">En</a>
-                    <a href="<?php echo ( network_home_url() . (is_bool($field) ? '' : $field['slug_page_es']) ); ?>">Es</a>
-            </div>
             <ul>
                 <li class="hidden-mobile"><a href="https://correo.ulpgc.es/"
                         class="ulpgcds-btn ulpgcds-btn--text"><span class="ulpgcds-btn__icon ulpgcds-icon-envelope"
