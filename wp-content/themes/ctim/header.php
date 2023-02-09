@@ -10,17 +10,16 @@
 
 ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="alternate" href="<?php get_site_url() . '/en'?>" hreflang="en" />
-    <?php wp_head(); ?>
+    <link rel="shortcut icon" href="#">
     <title>Document</title>
+    <?php wp_head(); ?>
 </head>
-<body>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.ulpgc.es/ulpgcds/1.0/js/ulpgcds.js?v=1.0"></script>
+<body <?php body_class('single'); ?>>
     <?php get_template_part( 'navbar' ) ?>
+    
     

@@ -1,0 +1,34 @@
+.main-content {
+    margin: 2rem auto;
+    max-width:$grid-max-width; 
+    width:$width-wrapper;
+    padding-right: 0 ;
+    padding-top:$spacing-l;
+    padding-bottom:$spacing-l;
+    @include clearfix;
+    @include mq('m-screen',min){
+        padding:0 $grid-gutter/2;
+    }
+}
+
+.top-menu {
+    display: flex !important;
+    align-items: end;
+    flex-direction: column;
+
+    &__flags {
+        display: flex;
+        gap: 8px;
+    }
+
+    ul {
+
+        li:last-child {
+            display: none;
+
+            @include mq-device {
+                display: inline-block;
+            }
+        }
+    }
+}

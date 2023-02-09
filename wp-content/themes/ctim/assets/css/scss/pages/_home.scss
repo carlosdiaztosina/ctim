@@ -1,8 +1,0 @@
-.contenido_portada {
-    padding-top: $header-height;
-    margin: 0 32px;
-
-    @include mq-device{
-        padding-top: $header-height-mobile;
-    }
-}
